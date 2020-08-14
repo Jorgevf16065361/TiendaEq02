@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Tienda Online</title>
+
+		<link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+	<header id="main-header">
+		<a id="logo-header" href="index.html">
+		<img src="Imagenes/logo2.png">
+		</a> <!-- / #logo-header -->
+
+		<nav>
+			<ul>
+                <li><a href="conocenos.html">Conocenos</a></li>	
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.jsp">Iniciar Sesion</a></li>
+			</ul>
+		</nav><!-- / nav -->
+	</header><!-- / #main-header -->
+
+	
+	<section id="main-content">
+            
+		<article>
+			<header>
+                            <h1>Tienda Informática E-NetBeans</h1>
+                           <center> <img src="Imagenes/banner/03 registro.jpg" alt="" border="4">	</center>
+
+
+
+                        <div>
+                            <br>
+            <script src="js/validacion.js"></script>        
+        <form name="formulario" method="post" action="AgregarUsu" onsubmit="return validar()">
+                <h2> Agregar Usuario </h2>
+                <table border="0" width="100%">
+                <tr><td>Nombre:</td><td>
+                <input type="text" name="usuario_Nombre" id="usuario_Nombre" size="40" required onkeypress="return validarN(event)" maxlength="40"></td></tr>
+                <br>
+                <tr><td>Apellidos:</td><td> 
+                        <input type="text" name="usuario_Apellido" id="usuario_Apellido" size="40" required onkeypress="return validarN(event)" maxlength="40"></td></tr>
+                <br>
+                <tr><td>Usuario:</td><td> 
+                <input type="text" name="usuario_User" id="usuario_User" size="40" required onkeypress="return validarN(event)" maxlength="40"></td></tr>
+                <br>
+                <tr><td>Clave:</td><td> 
+                <input type="text" name="usuario_Clave" id="usuario_Clave" size="40" required onkeypress="return validarL(event)" maxlength="10"></td></tr>
+                <br>
+                 <tr><td>Privilegio:</td><td> 
+                <input type="text" name="usuario_Privilegio" id="usuario_Privilegio" size="40" onkeypress="return validarL(event)" maxlength="10"></td></tr>
+                <br>
+                <td></td>
+               <td>  <br><input type="submit" value="Registrar Usuario"></td>
+                </table>
+            </form>
+                        </div>
+                                
+                        <div>
+                            <br>
+                            <form method="post" action="ConsultarUsu" onsubmit="">
+                                           <table border="0" width="100%">
+                                               <br>
+                                               <h2>Consultar Usuarios</h2>                      
+                                               <br>
+                                               <br>
+      
+                                                  <tr>
+                                                      <td style="width:260px;">Usuarios del sistema:</td>
+                                                      <td><input type="submit" value="Click para consultar"></td>
+                                                  </tr>
+                                          </table>
+                                               <br>
+                              </form>
+                      </div>
+			</header>
+
+
+		</article> <!-- /article -->
+	
+	</section> <!-- / #main-content -->
+
+	
+	
+	<footer id="main-footer">
+		<p>&copy; 2020 <a href="https://www.icel.edu.mx/campus/ciudad-de-mexico/ermita/" target="_blank">Universidad ICEL</a></p>
+		<span class="site-desc">Proyecto Final Programación de la Red Mundial</span>
+	</footer> <!-- / #main-footer -->
+
+	
+</body>
+</html>

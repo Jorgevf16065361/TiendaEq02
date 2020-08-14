@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Tienda Online</title>
+
+		<link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+	<header id="main-header">
+		<a id="logo-header" href="index.html">
+		<img src="Imagenes/logo2.png">
+		</a> <!-- / #logo-header -->
+
+		<nav>
+			<ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conocenos</a></li>
+		<li><a href="productos.html">Productos</a></li>
+                <li><a href="MostrarProductos.jsp">Consultar Productos</a></li>
+                <li><a href="AgregarProducto1.jsp">Agregar al Carrito</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+                <li><a href="SCerrarSesion">Cerrar Sesion</a></li>
+			</ul>
+		</nav><!-- / nav -->
+	</header><!-- / #main-header -->
+
+	
+	<section id="main-content">
+		<article>
+			<header>
+				<h1>Tienda Informática E-NetBeans</h1>
+               <center> <img src="Imagenes/banner/02 altaproducto.jpg" alt="" border="4">	</center>
+
+		        <div>
+                  <script src="js/validacion.js"></script>        
+                    <form name="formulario" method="post" action="AgregarPro" onsubmit="return validar()">  
+                        <table border="0" width="100%">
+                         <br>
+                          <h2>Agregar Producto</h2>
+                            <tr>
+                                <td>Nombre del Producto:</td>
+                                <td><input type="text" name="producto_Nombre" id="producto_Nombre" size="40" required onkeypress="return validarN(event)" maxlength="40"></td>
+                            </tr>
+                            <br>
+                            <tr>
+                                <td>Precio del Producto: </td>
+                                <td><input type="text" name="producto_Precio" id="producto_Precio" size="40" required onkeypress="return validarN(event)" maxlength="20"></td>
+                            </tr>
+                            <br>
+                            <tr>
+                                <td>Stock del Producto:</td>
+                                <td><input type="text" name="producto_Stock" id="producto_Stock" size="40"required onkeypress="return validarN(event)" maxlength="40"></td>
+                            </tr>
+                            <br>
+                                <td></td>
+                                <td>
+                                    <br><input type="submit" value="Registrar Producto">
+                                </td>
+                        </table>
+                    </form>
+                </div>
+                <br>
+
+                <div>
+                      <br>
+                        <form method="post" action="ConsultaPro" onsubmit="">
+                                     <table border="0" width="100%">
+                                         <br>
+                                         <h2>Consultar Productos</h2>                      
+                                         <br>
+                                         <br>
+
+                                            <tr>
+                                                <td style="width:320px;">Productos en el inventario:</td>
+                                                <td><input type="submit" value="Click para Consultar"></td>
+                                            </tr>
+                                    </table>
+                                         <br>
+                        </form>
+                </div>
+	    	</header>
+		</article> <!-- /article -->
+	
+	</section> <!-- / #main-content -->
+
+	
+	
+	<footer id="main-footer">
+		<p>&copy; 2020 <a href="https://www.icel.edu.mx/campus/ciudad-de-mexico/ermita/" target="_blank">Universidad ICEL</a></p>
+		<span class="site-desc">Proyecto Final Programación de la Red Mundial</span>
+	</footer> <!-- / #main-footer -->
+
+	
+</body>
+</html>
